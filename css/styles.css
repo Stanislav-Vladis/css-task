@@ -1,9 +1,106 @@
-@font-face{
-    font-family: 'BarlowWebFont';
-    src: url('../fonts/Barlow-Thin-webfont.woff') format('woff');
-}
-
 body {
     background-color: #EFF6FF;
-    font-family: 'BarlowWebFont', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
+
+#main-container {
+    min-width: 1095px;
+    height: 600px;
+    display: flex;
+    padding: 65px 45px 65px 45px; /* Верх, право, низ, лево */
+    background-color: red;
+}
+
+#image-container {
+    height: auto;
+}
+
+#image-container img {
+    max-height: 100%;
+    width: auto;
+}
+
+#info-container {
+    max-height: 100%;
+    width: 100%;
+    background-color: yellow;
+}
+
+#social-network-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#networks {
+    display: flex;
+    background-color: antiquewhite;
+    margin-top: 50px;
+}
+
+#facebook,
+#linkedin {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Запрет переноса строк */
+}
+
+#facebook,
+#linkedin {
+    width: 270px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#facebook {
+    background-color: #255A9B;
+    color: #fff;
+    margin-right: 15px;
+}
+
+#linkedin {
+    background-color: #0076B6;
+    color: #fff;
+    margin-left: 15px;
+}
+
+#facebook img,
+#linkedin img {
+    height: 15px;
+    width: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#facebook p,
+#linkedin p {
+    margin: 0; /* Убираем внутренние отступы у параграфа */
+}
+
+#delimiter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding-left: 140px;
+    margin-top: 25px;
+}
+
+#delimiter::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: #EEEEEE;
+}
+
+#delimiter p {
+    background-color: #EFF6FF;
+    padding: 0 10px;
+    margin-left: 125px;
+    position: relative;
+    z-index: 1;
+}
+
+
